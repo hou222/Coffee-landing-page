@@ -32,8 +32,8 @@ body {
     width: 50%;
     height: 100vh;
     position: absolute;
-    background-color: rgba(114, 104, 95, 0.916);
-    visibility: visible;
+    background-color: rgba(109, 103, 98, 0.951);
+    visibility: hidden;
     right: 0;
     top: 0;
     display: flex;
@@ -42,7 +42,40 @@ body {
     align-items: center;
 }
 
+.header__ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+}
 
+.header__ul a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #FFF;
+}
+
+@keyframes slideIn {
+    from {
+        right: -50%;
+    }
+    to {
+        right: 0;
+        
+    }
+}
+@keyframes slideOut {
+    from {
+        right: 0;
+    }
+    to {
+        right: -50%;
+        
+    }
+}
 
 .header__button {
     z-index: 1;
@@ -54,6 +87,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 } 
 
 .header__icon,
