@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    /* FONTS */
+    --FF: 'Roboto Mono';
+
+    /* COLORS */
+    --C: #FFF;
+    --SC:;
+}
+
 
 body {
-    background-color: rgb(66, 35, 35);
+    background-color: rgb(55, 29, 29);
     position: relative;
     overflow: hidden;
+    font-family: var(--FF);
 }
+
+/* || HEADER */
 
 .header {
     width: 100%;
@@ -22,8 +35,8 @@ body {
 }
 
 .header__image {
-    width: 50px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
     /* width: 60px;
     height: 50px; */
 }
@@ -55,7 +68,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
-    color: #FFF;
+    color: var(--C);
 }
 
 @keyframes slideIn {
@@ -130,3 +143,47 @@ body {
     ;
 } 
 
+/* || MAIN */
+
+
+.main__section1 {
+    padding: 40px 20px 0 20px;
+}
+
+.main__p1 {
+    color: var(--C);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.main__p1 span {
+    color: rgb(222, 180, 127);
+}
+
+.main__p2 {
+    margin-top: 15px;
+    color: var(--C);
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.main__btn {
+    margin-top: 15px;
+    padding: 5px 20px;
+    background-color: rgb(222, 180, 127);
+    color: var(--C);
+    font-weight: bold;
+    border: none;
+}
+
+.main__section2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__section2 img {
+    width: 380px;
+    height: 380px;
+}
