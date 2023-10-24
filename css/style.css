@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=M+PLUS+Rounded+1c:wght@500&family=Poppins:wght@700;800&family=Roboto+Mono:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 
 :root {
     /* FONTS */
-    --FF: 'Roboto Mono';
+    --FF: 'M PLUS Rounded 1c', sans-serif;
 
     /* COLORS */
     --C: #FFF;
@@ -16,7 +17,7 @@
 
 
 body {
-    background-color: rgb(55, 29, 29);
+    background-color: rgb(44, 29, 29);
     position: relative;
     overflow: hidden;
     font-family: var(--FF);
@@ -184,6 +185,110 @@ body {
 }
 
 .main__section2 img {
-    width: 380px;
+    min-width: 380px;
     height: 380px;
+}
+
+@media screen and (min-width: 768px) {
+    /* || HEADER */
+    .header__button {
+        visibility: hidden;
+    }
+
+    .header__nav {
+        width: 400px;
+        height: 60px;
+        display: flex;
+        flex-flow: row nowrap; 
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 20px;
+    }
+    
+    .header__ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 25px;
+        list-style-type: none;
+    }
+    
+    .header__ul a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        color: var(--C);
+    }
+
+    /* || MAIN */
+    .main {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;
+        padding: 70px 0;
+    }
+
+    .main__section1 {
+        width: 50%;
+       
+    }
+
+    .main__p1 {
+        font-size: 45px;
+    }
+    .main__p2 {
+        font-size: 15px;
+    }
+
+    .main__section2 {
+        width: 50%;
+    }
+
+    .main__section2 img{
+       
+            max-width: 500px;
+            height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+ .header {
+    padding: 10px 150px;
+ }
+ .header__nav {
+    padding-right: 90px;
+ }
+ .main__section1 {
+    padding: 0 50px 10px 150px;
+    padding-left: 150px;
+ }
+ .main__section2 img {
+        float: left;
+        min-width: 600px;
+        height: auto;
+        
+  margin-right: 10px;
+        transition: transform 0.5s ease-in-out;
+}
+.main__section2 img:hover {
+    transform: scale(1.2);
+}
+ .main__p1 {
+    font-size: 55px;
+ }
+ .main__p2 {
+    font-size: 20px;
+ }
+ .main__btn {
+    padding: 10px 30px;
+    font-size: 15px;
+ }
 }
