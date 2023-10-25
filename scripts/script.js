@@ -1,7 +1,9 @@
 const btn = document.querySelector('.js-header__button');
 const icon = document.querySelector('.js-header__icon');
 const nav = document.querySelector('.js-header__nav');
+const list = document.querySelectorAll('li');
 let clicked = false;
+let delay = 1000;
 
 btn.addEventListener('click', () => {
     if(!clicked){
@@ -19,3 +21,8 @@ btn.addEventListener('click', () => {
     clicked = false;
     }
 });
+
+list.forEach((element) => {
+    element.style.animationDelay =  `${delay}ms`;
+    delay += 100;
+})

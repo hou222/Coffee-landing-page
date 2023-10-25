@@ -12,7 +12,6 @@
 
     /* COLORS */
     --C: #FFF;
-    --SC:;
 }
 
 
@@ -54,6 +53,7 @@ body {
     flex-flow: row nowrap; 
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .header__ul {
@@ -196,7 +196,7 @@ body {
     }
 
     .header__nav {
-        width: 400px;
+        width: 600px;
         height: 60px;
         display: flex;
         flex-flow: row nowrap; 
@@ -207,7 +207,7 @@ body {
         position: fixed;
         top: 0;
         right: 0;
-        padding-top: 20px;
+        padding-top: 25px;
     }
     
     .header__ul {
@@ -232,7 +232,7 @@ body {
         flex-flow: row nowrap;
         justify-content: start;
         align-items: center;
-        padding: 70px 0;
+        padding: 10px 0;
     }
 
     .main__section1 {
@@ -263,6 +263,10 @@ body {
  .header {
     padding: 10px 150px;
  }
+ .header__image {
+    width: 70px;
+    height: 60px;
+ }
  .header__nav {
     padding-right: 90px;
  }
@@ -291,4 +295,38 @@ body {
     padding: 10px 30px;
     font-size: 15px;
  }
+}
+
+.animate {
+    animation-duration: 2.2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+    animation-name: anim-fade-in-up;
+}
+
+.delay-400 {
+    animation-delay: 400ms;
+}
+.delay-550 {
+    animation-delay: 550ms;
+}
+.delay-700 {
+    animation-delay: 700ms;
+}
+.delay-1000 {
+    animation-delay: 1000ms;
+}
+
+@keyframes anim-fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
