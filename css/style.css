@@ -70,6 +70,10 @@ body {
     color: var(--C);
 }
 
+.header__ul a:hover {
+    color: rgb(222, 180, 127);
+}
+
 @keyframes slideIn {
     from {
         right: -50%;
