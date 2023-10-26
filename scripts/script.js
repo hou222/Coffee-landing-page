@@ -2,6 +2,7 @@ const btn = document.querySelector('.js-header__button');
 const icon = document.querySelector('.js-header__icon');
 const nav = document.querySelector('.js-header__nav');
 const list = document.querySelectorAll('li');
+const image = document.querySelector('.js-image')
 let clicked = false;
 let delay = 1000;
 
@@ -25,4 +26,9 @@ btn.addEventListener('click', () => {
 list.forEach((element) => {
     element.style.animationDelay =  `${delay}ms`;
     delay += 100;
-})
+});
+
+image.addEventListener('mousemove', (event) => {
+    image.style.left = event.pageX + 'px';
+    image.style.top = event.pageY + 'px';
+});

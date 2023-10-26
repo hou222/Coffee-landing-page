@@ -37,8 +37,6 @@ body {
 .header__image {
     width: 60px;
     height: 50px;
-    /* width: 60px;
-    height: 50px; */
 }
 
 .header__nav {
@@ -78,7 +76,6 @@ body {
     }
     to {
         right: 0;
-        
     }
 }
 @keyframes slideOut {
@@ -87,7 +84,6 @@ body {
     }
     to {
         right: -50%;
-        
     }
 }
 
@@ -252,7 +248,6 @@ body {
     }
 
     .main__section2 img{
-       
             max-width: 500px;
             height: auto;
     }
@@ -275,16 +270,11 @@ body {
     padding-left: 150px;
  }
  .main__section2 img {
-        float: left;
-        min-width: 600px;
+        width: 600px;
         height: auto;
-        
-  margin-right: 10px;
-        transition: transform 0.5s ease-in-out;
-}
-.main__section2 img:hover {
-    transform: scale(1.2);
-}
+        margin-right: 10px;
+      }
+
  .main__p1 {
     font-size: 55px;
  }
